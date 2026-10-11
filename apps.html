@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Download Vitaran Saathi apps</title>
+<meta name="description" content="Download the Vitaran Saathi apps for the owner, salesmen, billing desk, godown, delivery men and your CA.">
+<meta name="theme-color" content="#4338ca">
+<style>
+:root{--in:#4338ca;--vi:#7c3aed;--sa:#ffb020;--ink:#17222e;--mut:#5b6878;--line:#e3e6f0;--bg:#f6f5ff}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45}
+header{background:linear-gradient(150deg,#312e81,#4338ca 50%,#7c3aed);color:#fff;padding:22px 16px 26px}
+.wrap{max-width:720px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px}
+.brand b{font-size:20px;display:block}.brand span{font-size:13px;opacity:.85}
+h1{font-size:24px;margin:20px 0 6px;line-height:1.2}
+header p{margin:0;color:#e0e3ff;font-size:15px}
+main{padding:16px}
+.app{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;display:flex;gap:12px;align-items:center}
+.app:target{border:2px solid var(--sa)}
+.ic{flex:0 0 46px;height:46px;border-radius:12px;background:var(--in);display:flex;align-items:center;justify-content:center}
+.ic svg{width:30px;height:30px}
+.tx{flex:1;min-width:0}.tx b{display:block;font-size:16px}.tx small{color:var(--mut);font-size:13px;display:block}
+a.dl{flex:0 0 auto;background:var(--in);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:10px 14px;border-radius:10px}
+a.dl.pc{background:#fff;color:var(--in);border:1.5px solid var(--in)}
+h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--in);margin:22px 0 10px}
+.box{background:#fff;border-left:5px solid var(--sa);border-radius:10px;padding:12px 14px;font-size:14px}
+.box ol{margin:6px 0 0;padding-left:20px}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:10px 16px 30px}
+footer a{color:var(--in);font-weight:700;text-decoration:none}
+#ver{font-size:13px;color:#e0e3ff;margin-top:8px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><svg width="48" height="48" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#fff"/><text x="44" y="72" text-anchor="middle" font-size="60" font-weight="800" font-family="sans-serif" fill="#4338ca">वि</text><path d="M80 88 C73 80 70 75 70 70 A10 10 0 1 1 90 70 C90 75 87 80 80 88 Z" fill="#ffb020"/><circle cx="80" cy="70" r="3.6" fill="#4338ca"/></svg>
+  <div><b>Vitaran Saathi</b><span>From the Pride of Assam</span></div></div>
+  <h1>Download your Vitaran app</h1>
+  <p>Install the app for your job, then log in with the company code, login ID and password your owner gave you.</p>
+  <div id="ver"></div>
+</div></header>
+<main><div class="wrap">
+  <h2>Android phone apps</h2>
+  <div id="list"></div>
+  <h2>For the office computer (Windows)</h2>
+  <div id="pc"></div>
+  <h2>How to install</h2>
+  <div class="box"><ol>
+    <li>Tap <b>Download</b> next to your app.</li>
+    <li>Open the downloaded file. If the phone asks, allow <b>Install unknown apps</b> for your browser or WhatsApp.</li>
+    <li>Tap <b>Install</b>, open the app and tap <b>Log in</b>.</li>
+  </ol><p style="margin:8px 0 0">Updates come inside the app: a bar shows <b>Update now</b> when a new version is ready.</p></div>
+</div></main>
+<footer>Need help? Call or WhatsApp <a href="https://wa.me/919401042222">94010 42222</a><br>Vitaran Saathi · From the Pride of Assam</footer>
+<script>
+(function(){
+  var BASE='https://exziomeweckncvqigpnl.supabase.co/storage/v1/object/public/apps/';
+  var I={
+    owner:'<path d="M25 71L20 38l16.5 13L50 31l13.5 20L80 38l-5 33z" fill="#fff"/><circle cx="50" cy="24" r="7" fill="#ffb020"/><rect x="24" y="77" width="52" height="8" rx="4" fill="#fff"/>',
+    sales:'<path d="M50 85C44 76 27 62 27 45a23 23 0 0 1 46 0c0 17-17 31-23 40z" fill="#fff"/><circle cx="50" cy="45" r="11.5" fill="#4338ca"/><circle cx="50" cy="45" r="7" fill="#ffb020"/>',
+    billing:'<path d="M27 15h46v70l-7.7-5.5-7.6 5.5-7.7-5.5-7.7 5.5-7.6-5.5L27 85z" fill="#fff"/><path d="M37 33h26M37 45h26M37 57h12" stroke="#4338ca" stroke-width="5" stroke-linecap="round"/><circle cx="60" cy="57" r="6" fill="#ffb020"/>',
+    godown:'<rect x="17" y="51" width="31" height="29" rx="4" fill="#fff"/><rect x="52" y="51" width="31" height="29" rx="4" fill="#fff"/><rect x="34.5" y="18" width="31" height="29" rx="4" fill="#fff"/><circle cx="50" cy="32.5" r="7" fill="#ffb020"/>',
+    delivery:'<rect x="14" y="31" width="44" height="33" rx="5" fill="#fff"/><path d="M61 40h12.5l12 13.5V64H61z" fill="#fff"/><circle cx="29" cy="67" r="9.5" fill="#4338ca"/><circle cx="29" cy="67" r="6.5" fill="#fff"/><circle cx="72" cy="67" r="9.5" fill="#4338ca"/><circle cx="72" cy="67" r="6.5" fill="#fff"/><circle cx="36" cy="47.5" r="6.5" fill="#ffb020"/>',
+    ca:'<rect x="22" y="14" width="56" height="72" rx="7" fill="#fff"/><path d="M33 36h34M33 49h34M33 62h16" stroke="#4338ca" stroke-width="6" stroke-linecap="round"/><path d="M55 66l7 7 13-15" stroke="#ffb020" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+    pc:'<rect x="14" y="20" width="72" height="46" rx="5" fill="#fff"/><rect x="40" y="70" width="20" height="8" fill="#fff"/><rect x="30" y="78" width="40" height="5" rx="2.5" fill="#fff"/><circle cx="50" cy="43" r="7" fill="#ffb020"/>'};
+  var APPS=[['owner','owner','Vitaran Owner','For the owner: live sales, bills, stock, team and reports','VitaranOwner.apk'],
+    ['sales','sales','Vitaran Sales','For salesmen: shop check-in, orders, van sale, collections','VitaranSales.apk'],
+    ['billing','billing','Vitaran Billing','For the billing desk: GST bills, collections, dues','VitaranBilling.apk'],
+    ['godown','godown','Vitaran Godown','For the godown manager: stock in and out, loading vans','VitaranGodown.apk'],
+    ['delivery','delivery','Vitaran Delivery','For delivery men: deliveries, signature, payment','VitaranDelivery.apk'],
+    ['ca','ca','Vitaran CA','For your chartered accountant: GST returns and audit','VitaranCA.apk']];
+  var PC=[['tally','pc','Vitaran Tally Connector','Keeps TallyPrime and the apps in step','VitaranTallyConnector.exe'],
+    ['capc','ca','Vitaran CA for Windows','The CA app on the office computer','VitaranCA.exe']];
+  function row(a,pc){return '<div class="app" id="'+a[0]+'"><div class="ic"><svg viewBox="0 0 100 100">'+I[a[1]]+'</svg></div><div class="tx"><b>'+a[2]+'</b><small>'+a[3]+'</small></div><a class="dl'+(pc?' pc':'')+'" href="'+BASE+a[4]+'" download>Download</a></div>'}
+  document.getElementById('list').innerHTML=APPS.map(function(a){return row(a)}).join('');
+  document.getElementById('pc').innerHTML=PC.map(function(a){return row(a,true)}).join('');
+  fetch(BASE+'latest.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(j){
+    if(j&&j.version){document.getElementById('ver').textContent='Latest version '+j.version;
+      [].forEach.call(document.querySelectorAll('a.dl'),function(x){x.href=x.href.split('?')[0]+'?v='+encodeURIComponent(j.version)})}}).catch(function(){});
+  var h=location.hash.slice(1);if(h){var el=document.getElementById(h);if(el)el.scrollIntoView()}
+})();
+</script>
+</body>
+</html>
