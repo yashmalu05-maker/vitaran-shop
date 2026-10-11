@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b7a75">
+<meta name="theme-color" content="#4338ca">
 <meta name="robots" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 <title>Order online</title>
 <style>
-:root{--ink:#0b7a75;--ink2:#0e8f89;--soft:#e6f4f3;--bg:#f4f6f8;--card:#fff;--text:#16202b;--mut:#5d6b7a;--line:#e1e6ec;--good:#187a4c;--good-soft:#e8f5ee;--warn:#9a5b00;--warn-soft:#fff3dc;--bad:#b3263e;--bad-soft:#fbecef;--gold:#ffc247}
+:root{--ink:#4338ca;--ink2:#6d28d9;--soft:#f1effd;--bg:#f4f6f8;--card:#fff;--text:#16202b;--mut:#5d6b7a;--line:#e1e6ec;--good:#187a4c;--good-soft:#e8f5ee;--warn:#9a5b00;--warn-soft:#fff3dc;--bad:#b3263e;--bad-soft:#fbecef;--gold:#ffb020}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;padding-bottom:96px}
 button,input,textarea{font:inherit;color:inherit}
@@ -18,11 +18,11 @@ button{cursor:pointer}
 .top .for{opacity:.9;margin-top:4px;font-size:14px}
 .top .call{float:right;color:#fff;border:1.5px solid rgba(255,255,255,.6);border-radius:999px;padding:6px 12px;text-decoration:none;font-size:14px;font-weight:600;margin-left:10px}
 .wrap{max-width:640px;margin:0 auto;padding:0 12px}
-.bal{background:var(--card);border-radius:16px;box-shadow:0 4px 18px rgba(16,32,48,.10);margin:-40px 0 12px;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.bal{width:100%;border:0;text-align:left;font:inherit;color:inherit;cursor:pointer;background:var(--card);border-radius:16px;box-shadow:0 4px 18px rgba(16,32,48,.10);margin:-40px 0 12px;padding:14px 16px;display:flex;align-items:center;gap:12px}
 .bal .l{color:var(--mut);font-size:13px}.bal .v{font-size:24px;font-weight:800}.bal .v.due{color:var(--bad)}.bal .v.ok{color:var(--good)}
-.bal .s{margin-left:auto;text-align:right;font-size:13px;color:var(--mut)}
+.bal .s{margin-left:auto;text-align:right;font-size:13px;color:var(--mut)}.bal .s u{color:var(--ink)}
 .tabs{display:flex;background:var(--card);border-radius:12px;padding:4px;gap:4px;margin:0 0 12px;border:1px solid var(--line)}
-.tabs button{flex:1;border:0;background:none;padding:10px 6px;border-radius:9px;font-weight:700;color:var(--mut)}
+.tabs button{flex:1;border:0;background:none;padding:10px 2px;font-size:15px;border-radius:9px;font-weight:700;color:var(--mut)}
 .tabs button.on{background:var(--soft);color:var(--ink)}
 .tabs .n{display:inline-block;min-width:20px;padding:0 6px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;margin-left:4px}
 h2{font-size:15px;margin:18px 2px 8px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
@@ -38,12 +38,10 @@ h2{font-size:15px;margin:18px 2px 8px;color:var(--mut);text-transform:uppercase;
 .brand{font-size:13px;font-weight:700;color:var(--mut);margin:14px 4px 6px;text-transform:uppercase;letter-spacing:.04em}
 .prod{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:8px;display:flex;gap:10px;align-items:center}
 .prod.has{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink) inset}
-.prod.out{opacity:.62}
 .prod .nm{flex:1;min-width:0}
 .prod .nm b{display:block;font-size:15px;line-height:1.25}
-.prod .pr{font-size:15px;font-weight:700;margin-top:3px}.prod .pr small{font-weight:500;color:var(--mut)}
 .tag{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:2px 8px;margin:4px 4px 0 0}
-.tag.in{background:var(--good-soft);color:var(--good)}.tag.few{background:var(--warn-soft);color:var(--warn)}.tag.out{background:var(--bad-soft);color:var(--bad)}.tag.off{background:#fff0c2;color:#6b4a00}
+.tag.off{background:#fff0c2;color:#6b4a00}
 .qty{display:flex;align-items:center;gap:4px}
 .qty button{width:38px;height:38px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);font-size:20px;font-weight:700;line-height:1;color:var(--ink)}
 .qty input{width:56px;height:38px;text-align:center;border-radius:10px;border:1.5px solid var(--line);font-weight:700;-moz-appearance:textfield}
@@ -77,10 +75,27 @@ textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:10
 .toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%);background:#16202b;color:#fff;padding:10px 16px;border-radius:12px;font-size:14px;z-index:20;max-width:92vw;text-align:center}
 .foot{text-align:center;color:var(--mut);font-size:12px;margin:22px 0 8px}
 [hidden]{display:none!important}
+.ghost.small{padding:7px 12px;font-size:14px;margin-top:8px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.btnrow .big{margin-left:0}
+.bigv{font-size:28px;font-weight:800;margin-top:2px}.bigv.due{color:var(--bad)}.bigv.ok{color:var(--good)}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;color:var(--mut);font-weight:600;font-size:12px;border-bottom:1.5px solid var(--line);padding:6px 4px}
+td{border-bottom:1px solid var(--line);padding:7px 4px;vertical-align:top}
+th.n,td.n{text-align:right;white-space:nowrap}
+tr.b td{font-weight:700;background:var(--soft)}
+.bill .bh{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;border-bottom:1.5px solid var(--line);padding-bottom:10px}
+.bill .bf{font-size:18px}.bill .bt{width:100%}.bill .bt>b{font-size:16px;color:var(--ink);display:block}.bill .bt div{display:inline-block;margin-right:14px}
+.led{font-size:13px}.led td,.led th{padding:6px 3px}
+.bill .bto{padding:10px 0;border-bottom:1.5px solid var(--line);margin-bottom:6px}
+.bill .free{font-size:12px;font-weight:700;color:var(--good)}
+.tot{margin:10px 0 6px auto;max-width:300px}.tot div{display:flex;justify-content:space-between;padding:3px 0}
+.tot .gt{font-size:19px;font-weight:800;border-top:1.5px solid var(--line);margin-top:4px;padding-top:6px}
+@media print{body{background:#fff;padding:0}.noprint,.bar,.toast{display:none!important}.card{border:0;padding:0}.wrap{max-width:none}h2{color:#000}}
 </style>
 </head>
 <body>
-<div id="app"><div class="msg"><b>Opening…</b><span class="mut">Getting your rates and orders.</span></div></div>
+<div id="app"><div class="msg"><b>Opening…</b><span class="mut">Getting your items and orders.</span></div></div>
 <div class="bar" id="bar" hidden></div>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 <script src="config.js"></script>
